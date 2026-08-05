@@ -82,7 +82,9 @@ export function getCuratedProfileContext(language: Language) {
     role: localized.role,
     about: localized.about,
     skills: localized.skills,
-    projects: localized.projects,
+    // These are deliberately separate: navigation exposes selected projects only,
+    // while Gemini may answer questions about the additional portfolio project.
+    projects: [...localized.projects, ...localized.aiOnlyProjects],
     education: localized.education,
     email: profile.email
   };

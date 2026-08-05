@@ -13,6 +13,7 @@ export type LocalizedProfile = {
   about: string[];
   skills: Record<string, string[]>;
   projects: Project[];
+  aiOnlyProjects: Project[];
   education: string[];
   contactIntro: string;
 };
@@ -55,6 +56,13 @@ export const profile = {
         stack: ["Excel", "Microsoft Word", "Comparative analysis"]
       }
     ],
+    aiOnlyProjects: [
+      {
+        name: "Bilingual Terminal Portfolio",
+        description: "Built and deployed a bilingual recruiter-focused portfolio with a terminal-inspired interface. It offers local portfolio navigation and a Gemini-powered question field that answers only from curated profile information. The public AI endpoint is protected by an IP-based Vercel rate limit.",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Gemini API", "Vercel", "Vercel Analytics", "Vercel Firewall"]
+      }
+    ],
     education: [
       "Banking and Digital Finance - University of Lodz (student)",
       "Responsible AI: Applying AI Principles with Google Cloud - issued 30 July 2026 (credential 10532213)"
@@ -89,6 +97,13 @@ export const profile = {
         name: "Analiza porownawcza spolek kolejowych",
         description: "Porownalem przewoznika pasazerskiego ze spolka infrastruktury kolejowej, analizujac roznice w modelach biznesowych, priorytetach operacyjnych, strukturach finansowych i kluczowych wskaznikach efektywnosci.",
         stack: ["Excel", "Microsoft Word", "Analiza porownawcza"]
+      }
+    ],
+    aiOnlyProjects: [
+      {
+        name: "Dwujezyczne portfolio terminalowe",
+        description: "Zbudowalem i wdrozylem dwujezyczne portfolio dla rekruterow z interfejsem inspirowanym terminalem. Oferuje lokalna nawigacje po portfolio oraz pole pytan oparte na Gemini, ktore odpowiada wylacznie na podstawie wybranych informacji profilowych. Publiczny endpoint AI jest chroniony limitem zapytan Vercel wedlug adresu IP.",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Gemini API", "Vercel", "Vercel Analytics", "Vercel Firewall"]
       }
     ],
     education: [
