@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Dawid Kubiak</title>
+  <rect width="64" height="64" rx="14" fill="#04111f"/>
+  <path d="M13 16h38v32H13z" fill="#091a2a" stroke="#4be4ef" stroke-width="2"/>
+  <text x="32" y="39" text-anchor="middle" fill="#e7f6fb" font-family="monospace" font-size="19" font-weight="700">DK_</text>
+</svg>

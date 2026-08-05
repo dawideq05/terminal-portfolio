@@ -1,0 +1,16 @@
+# dependencies
+/node_modules
+/.npm-cache
+/.pnp
+.pnp.*
+
+# Next.js
+/.next/
+/out/
+
+# local environment files
+.env*.local
+
+# editor and system files
+.DS_Store
+*.tsbuildinfo
