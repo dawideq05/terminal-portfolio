@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
@@ -37,14 +37,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     <html lang="en">
       <body>
         {children}
-        {process.env.VERCEL === "1" && (
-          <>
-            <Script id="vercel-analytics-queue" strategy="afterInteractive">
-              {"window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };"}
-            </Script>
-            <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
-          </>
-        )}
+        <Analytics />
       </body>
     </html>
   );
